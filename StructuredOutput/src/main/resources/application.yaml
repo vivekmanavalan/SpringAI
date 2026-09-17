@@ -1,0 +1,17 @@
+spring:
+  application:
+    name: Spring AI Basics
+  ai:
+    openai:
+      api-key: ${OPENROUTER_API_KEY}
+      base-url: https://openrouter.ai/api
+      chat:
+        options:
+          model: qwen/qwen3.7-flash
+      embedding:
+        enabled: false
+logging:
+  level:
+    org.springframework.ai: INFO
+
+
